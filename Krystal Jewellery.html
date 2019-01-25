@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="KrystalJewellery.css">
+        <meta name="author" content="Ana Vilaça e Bruno Justa">
+        <meta name="description" content="Online Store">
+        <link rel="icon" href="logo.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <title>Krystal Jewellery</title>
+    </head>
+
+    <header>
+      <img src="Banner2.png">
+    </header>
+
+    <body>
+
+      <!--MENU-->
+      <nav class="stroke">
+        <ul>  
+          <li class="dropdown">
+            <a class="dropbtn">Jewelry</a>
+              <div class="submenu">
+                <a href="Necklaces.html">Necklaces</a>
+                <a href="Bracelets.html">Bracelets</a>
+                <a href="Earrings.html">Earrings</a>
+                <a href="Sets.html">Sets</a>
+                <a href="Pedants.html">Pedants</a>
+                <a href="Rings.html">Rings</a>
+              </div>
+          </li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="#">Best Sellers</a></li>
+          <li><a href="#">Engravables</a></li>
+        </ul>
+      </nav>
+
+    <!--SLIDESHOW-->
+<div class="slideshow-container">
+  <div class="slides fade">
+    <div><img src="slideshow8.jpg"></div>
+    <div class="title">Sale Has Started</div>
+    <div class="subtitle">NOW UP TO 60% OFF</div>
+    <div><a href="Sale.html" class="button">Discover More</a></div>
+  </div>
+  <div class="slides">
+    <div><img src="slideshow9.jpg"></div>
+    <div class="title">Brilliant Love</div>
+    <div class="subtitle">Give your loved one something heartfelt this Valentine's Day!</div>
+    <div><a href="#" class="button">Discover More</a></div>
+  </div>
+  <div class="slides">
+    <div><img src="slideshow4.jpg"></div>
+    <div class="title">Galentine's Day</div>
+    <div class="subtitle">Show your girl squad how much you love them with a sparkling gift from the heart!</div>
+    <div><a href="#" class="button">Discover More</a></div>
+  </div>
+
+<a class="prev" onclick="plusIndex(-1)">&#10094;</a>
+<a class="next" onclick="plusIndex(+1)">&#10095;</a>
+</div>
+
+<br/>
+
+<div style="text-align:center">
+  <span class="dots" onclick="currentSlide(1)"></span>
+  <span class="dots" onclick="currentSlide(2)"></span>
+  <span class="dots" onclick="currentSlide(3)"></span>
+</div>
+
+<script type="text/javascript">
+  var slideIndex = 1;
+
+  showImage(slideIndex);
+
+  function plusIndex(n) {
+    showImage(slideIndex += n);
+  }
+
+function currentSlide(n){
+  showImage(slideIndex = n);
+}
+
+  function showImage(n){
+    var slide = document.getElementsByClassName("slides");
+    var dots = document.getElementsByClassName("dots");
+
+    if (n > slide.length) {slideIndex = 1};
+    if (n < 1) {slideIndex = slide.length};
+
+    for (var i = 0; i < slide.length; i++){
+      slide[i].style.display = "none";
+    };
+
+    slide[slideIndex-1].style.display = "block";
+
+    for (var i=0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    dots[slideIndex-1].className += " active";
+
+    
+  }
+</script>
+
+<!--Bio da loja-->
+<br><br>
+<h2>The Krystal Jewellery Story</h2>
+<hr>
+<p>In 2007 Krystal Jewellery was born. We began selling semi-precious components combined with beautiful charms. In 2008 we launched our first concession in Topshop and we've been growing ever since, with retail partners across the globe and an international website. We travel far and wide to find inspiration for beautiful jewellery and deliver it to our loyal customers with the signature Krystal touch.</p>
+
+<!--Must Haves-->
+<br><br><br>
+<h2>Krystal Jewellery Must Haves</h2>
+<hr>
+
+<div class="Must-Haves">
+  <table>
+    <tr>
+      <td><section><img src="musthave1.jpg" class="bottom"><img src="musthave2.jpg" class="top"></section></td>
+      <td><section><img src="musthave3.jpg" class="bottom"><img src="musthave4.jpg" class="top"></section></td>
+      <td><section><img src="musthave5.jpg" class="bottom"><img src="musthave6.jpg" class="top"></section></td>
+      <td><section><img src="musthave7.jpg" class="bottom"><img src="musthave8.jpg" class="top"></section></td>
+  </tr>
+  <tr>
+    <td><div class="legenda">Double Chain Bracelet</div></td>
+    <td><div class="legenda">Engravable Round Signet Ring</div></td>
+    <td><div class="legenda">Roman Arc Coin Necklace</div></td>
+    <td><div class="legenda">Gold Leaf Choker</div></td>
+  </tr>
+  <tr>
+    <td><div class="price1">79.00€<a href="#" class="button1">Shop</a></div><section class="heart1"><img src="heart-icon1.png" class="heart-inactive"><img src="heart-icon.png" class="heart-active"></section></td>
+    <td><div class="price2">89.00€<a href="#" class="button2">Shop</a></div><section class="heart2"><img src="heart-icon1.png" class="heart-inactive"><img src="heart-icon.png" class="heart-active"></section></div></td>
+    <td><div class="price3">149.00€<a href="#" class="button3">Shop</a></div><div><section class="heart3"><img src="heart-icon1.png" class="heart-inactive"><img src="heart-icon.png" class="heart-active"></section></td>
+    <td><div class="price4">89.00€<a href="#" class="button4">Shop</a></div><section class="heart4"><img src="heart-icon1.png" class="heart-inactive"><img src="heart-icon.png" class="heart-active"></section></td>
+  </tr>
+</table>
+</div>
+
+
+<!--CATEGORIAS-->
+<br><br><br>
+<h2>Shop By Category</h2>
+<hr>
+
+<div class="linha1">
+  <div class="grid-item"><img src="sale.jpg" class="img1"><div class="overlayBestofSale"><a href="" class="buttonBestofSale">Best of Sale</a></div></div>
+  <img src="necklaces.jpg" class="img2"><div class="overlayNecklaces"><a href="" class="buttonNecklaces">Shop Necklaces</a></div>
+</div>
+<div class="linha2">
+  <img src="bestsellers.jpg" class="img3"><div class="overlayBestSellers"><a href="" class="buttonBestSellers">Shop Best Sellers</a></div>
+  <img src="rings.jpg" class="img4"><div class="overlayRings"><a href="" class="buttonRings">Shop Rings</a></div>
+</div>
+<div class="linha3">
+  <img src="earrings.jpg" class="img5"><div class="overlayEarrings"><a href="" class="buttonEarrings">Shop Earrings</a></div>
+  <img src="engravables.jpg" class="img6"><div class="overlayEngravables"><a href="" class="buttonEngravables">Shop Engravables</a></div>
+</div>
+
+
+
+<!--instagram-->
+<div class="Instagram">
+<br><br><br>
+<h2>Instagram</h2>
+<hr>
+</div>
+
+<div class="instagram-column">
+  <div><a href="https://www.instagram.com/"><img src="insta1.jpg"></a></div>
+  <div><a href="https://www.instagram.com/"><img src="insta2.jpg"></a></div>
+  <div><a href="https://www.instagram.com/"><img src="insta3.jpg"></a></div>
+  <div><a href="https://www.instagram.com/"><img src="insta4.jpg"></a></div>
+</div>
+
+
+
+<!--SOCIAL MEDIA-->
+<br><br><br>
+<h3>Get to know us</h3>
+<hr class="follow-us">
+</div>
+
+<div class="get-to-know-us">
+    <div><a href="https://www.twitter.com/"><img src="twitter.png"></a></div>
+    <div><a href="https://instagram.com/"><img src="instagram.png"></a></div>
+    <div><a href="https://www.facebook.com/"><img src="facebook.png"></a></div>
+    <div><a href="https://www.pinterest.pt/"><img src="pinterest.png"></a></div>
+</div>
+
+
+
+<footer>
+
+<div class="container-footer">
+  <div class="my-account">
+    <ul>
+      <h4>Account</h4>
+      <li>My Account</li>
+      <li>Delivery & Returns</li>
+      <li>Track Order</li>
+      <li>Shipping</li>
+      <li>Guarantee</li>
+      <li>Customer FAQS</li>
+      <li>Terms & Conditions</li>
+      <li>Privacy & Security</li>
+    </ul>
+   
+  </div>
+
+  <div class="Jewellery-info">
+      <ul>
+        <h4>Jewellery Info</h4>
+        <li> Ring Sizing</li>
+        <li>Jewellery Care</li>
+      </ul>
+  </div>
+
+  <div class="contact-us">
+    <ul>
+      <h4>Contact us</h4>
+      <li>+351 220 117 711</li>
+      <li>KrystalJewellery@shop.com</li>
+    </ul>  
+  </div>
+
+  <div class="office-hours">
+    <ul>
+      <h4>Office Hours</h4>
+      <li>Monday - Friday</li>
+      <li>9AM - 5PM</li>
+    </ul>
+  </div>
+
+  <div>
+    <input type="text" name placeholder="ENTER YOUR EMAIL" class="uremail">
+    <button class="button-search">Sign Up</button>
+  </div>
+  <div class="be1st2know">
+  Sign up for exclusive offers, sales, collection launches & events!
+  </div>
+</div>
+
+
+
+</footer>
+ <!--     <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to seach">
+            <a class="search-btn" href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+
+
+        <div class="login-box">
+            <a class="login-btn" href="login.html">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+
+
+        <div class="shopping-box">
+            <a class="shopping-btn" href="#">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>  --> 
+
+    </body>
+    
+</html>
