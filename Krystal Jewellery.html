@@ -11,7 +11,7 @@
     </head>
 
     <header>
-      <img src="Banner2.png">
+      <a href="Krystal Jewellery.html"><img src="Banner2.png"></a>
     </header>
 
     <body>
@@ -20,20 +20,18 @@
       <nav class="stroke">
         <ul>  
           <li class="dropdown">
-            <a class="dropbtn">Jewelry</a>
+            <a href="Jewellery.html"class="dropbtn">Jewellery</a>
               <div class="submenu">
-                <a href="Necklaces.html">Necklaces</a>
-                <a href="Bracelets.html">Bracelets</a>
-                <a href="Earrings.html">Earrings</a>
-                <a href="Sets.html">Sets</a>
-                <a href="Pedants.html">Pedants</a>
-                <a href="Rings.html">Rings</a>
+                <a href="Jewellery.html#Rings">Rings</a>
+                <a href="Jewellery.html#Earrings">Earrings</a>
+                <a href="Jewellery.html#Bracelets">Bracelets</a>
+                <a href="Jewellery.html#Necklaces">Necklaces</a>
+                <a href="Jewellery.html#Engravables">Engravables</a>
               </div>
           </li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Sale</a></li>
-          <li><a href="#">Best Sellers</a></li>
-          <li><a href="#">Engravables</a></li>
+          <li><a href="Krystal Jewellery.html#news">News</a></li>
+          <li><a href="Krystal Jewellery.html#bestsellers">Best Sellers</a></li>
+          <li><a href="Krystal Jewellery.html#aboutus">About Us</a></li>
         </ul>
       </nav>
 
@@ -43,19 +41,19 @@
     <div><img src="slideshow8.jpg"></div>
     <div class="title">Sale Has Started</div>
     <div class="subtitle">NOW UP TO 60% OFF</div>
-    <div><a href="Sale.html" class="button">Discover More</a></div>
+    <div><a href="Jewellery.html" class="button">Discover More</a></div>
   </div>
-  <div class="slides">
+  <div class="slides fade">
     <div><img src="slideshow9.jpg"></div>
     <div class="title">Brilliant Love</div>
     <div class="subtitle">Give your loved one something heartfelt this Valentine's Day!</div>
-    <div><a href="#" class="button">Discover More</a></div>
+    <div><a href="Jewellery.html" class="button">Discover More</a></div>
   </div>
-  <div class="slides">
+  <div class="slides fade">
     <div><img src="slideshow4.jpg"></div>
     <div class="title">Galentine's Day</div>
     <div class="subtitle">Show your girl squad how much you love them with a sparkling gift from the heart!</div>
-    <div><a href="#" class="button">Discover More</a></div>
+    <div><a href="Jewellery.html" class="button">Discover More</a></div>
   </div>
 
 <a class="prev" onclick="plusIndex(-1)">&#10094;</a>
@@ -104,17 +102,21 @@ function currentSlide(n){
 
     
   }
+
+  function alerta() {
+    alert("De momento esta página não se encontra disponível.")
+  }
 </script>
 
 <!--Bio da loja-->
 <br><br>
-<h2>The Krystal Jewellery Story</h2>
+<h2 id="aboutus">The Krystal Jewellery Story</h2>
 <hr>
 <p>In 2007 Krystal Jewellery was born. We began selling semi-precious components combined with beautiful charms. In 2008 we launched our first concession in Topshop and we've been growing ever since, with retail partners across the globe and an international website. We travel far and wide to find inspiration for beautiful jewellery and deliver it to our loyal customers with the signature Krystal touch.</p>
 
 <!--Must Haves-->
 <br><br><br>
-<h2>Krystal Jewellery Must Haves</h2>
+<h2 id="bestsellers">Krystal Jewellery Must Haves</h2>
 <hr>
 
 <div class="Must-Haves">
@@ -132,10 +134,10 @@ function currentSlide(n){
     <td><div class="legenda">Gold Leaf Choker</div></td>
   </tr>
   <tr>
-    <td><div class="price1">79.00€<a href="#" class="button1">Shop</a></div><section class="heart1"><img src="heart-icon1.png" class="heart-inactive"><img src="heart-icon.png" class="heart-active"></section></td>
-    <td><div class="price2">89.00€<a href="#" class="button2">Shop</a></div><section class="heart2"><img src="heart-icon1.png" class="heart-inactive"><img src="heart-icon.png" class="heart-active"></section></div></td>
-    <td><div class="price3">149.00€<a href="#" class="button3">Shop</a></div><div><section class="heart3"><img src="heart-icon1.png" class="heart-inactive"><img src="heart-icon.png" class="heart-active"></section></td>
-    <td><div class="price4">89.00€<a href="#" class="button4">Shop</a></div><section class="heart4"><img src="heart-icon1.png" class="heart-inactive"><img src="heart-icon.png" class="heart-active"></section></td>
+    <td><div class="price1">79.00€<a href="#" class="button1" onclick="alerta()">Shop</a></div><section class="heart1"><img src="heart-icon1.png" class="heart-inactive"><img src="heart-icon.png" class="heart-active"></section></td>
+    <td><div class="price2">89.00€<a href="#" class="button2" onclick="alerta()">Shop</a></div><section class="heart2"><img src="heart-icon1.png" class="heart-inactive"><img src="heart-icon.png" class="heart-active"></section></div></td>
+    <td><div class="price3">149.00€<a href="#" class="button3" onclick="alerta()">Shop</a></div><div><section class="heart3"><img src="heart-icon1.png" class="heart-inactive"><img src="heart-icon.png" class="heart-active"></section></td>
+    <td><div class="price4">89.00€<a href="#" class="button4" onclick="alerta()">Shop</a></div><section class="heart4"><img src="heart-icon1.png" class="heart-inactive"><img src="heart-icon.png" class="heart-active"></section></td>
   </tr>
 </table>
 </div>
@@ -147,16 +149,16 @@ function currentSlide(n){
 <hr>
 
 <div class="linha1">
-  <div class="grid-item"><img src="sale.jpg" class="img1"><div class="overlayBestofSale"><a href="" class="buttonBestofSale">Best of Sale</a></div></div>
-  <img src="necklaces.jpg" class="img2"><div class="overlayNecklaces"><a href="" class="buttonNecklaces">Shop Necklaces</a></div>
+  <div class="grid-item"><img src="sale.jpg" class="img1"><div class="overlayBestofSale"><a href="Jewellery.html" class="buttonBestofSale">Best of Sale</a></div></div>
+  <img src="necklaces.jpg" class="img2"><div class="overlayNecklaces"><a href="Jewellery.html#Necklaces" class="buttonNecklaces">Shop Necklaces</a></div>
 </div>
 <div class="linha2">
-  <img src="bestsellers.jpg" class="img3"><div class="overlayBestSellers"><a href="" class="buttonBestSellers">Shop Best Sellers</a></div>
-  <img src="rings.jpg" class="img4"><div class="overlayRings"><a href="" class="buttonRings">Shop Rings</a></div>
+  <img src="bestsellers.jpg" class="img3"><div class="overlayBestSellers"><a href="Krystal Jewellery.html#bestsellers" class="buttonBestSellers">Shop Best Sellers</a></div>
+  <img src="rings.jpg" class="img4"><div class="overlayRings"><a href="Jewellery.html#Rings" class="buttonRings">Shop Rings</a></div>
 </div>
 <div class="linha3">
-  <img src="earrings.jpg" class="img5"><div class="overlayEarrings"><a href="" class="buttonEarrings">Shop Earrings</a></div>
-  <img src="engravables.jpg" class="img6"><div class="overlayEngravables"><a href="" class="buttonEngravables">Shop Engravables</a></div>
+  <img src="earrings.jpg" class="img5"><div class="overlayEarrings"><a href="Jewellery.html#Earrings" class="buttonEarrings">Shop Earrings</a></div>
+  <img src="engravables.jpg" class="img6"><div class="overlayEngravables"><a href="Jewellery.html#Engravables" class="buttonEngravables">Shop Engravables</a></div>
 </div>
 
 
@@ -164,15 +166,15 @@ function currentSlide(n){
 <!--instagram-->
 <div class="Instagram">
 <br><br><br>
-<h2>Instagram</h2>
+<h2 id="news">New In Stock</h2>
 <hr>
 </div>
 
 <div class="instagram-column">
-  <div><a href="https://www.instagram.com/"><img src="insta1.jpg"></a></div>
-  <div><a href="https://www.instagram.com/"><img src="insta2.jpg"></a></div>
-  <div><a href="https://www.instagram.com/"><img src="insta3.jpg"></a></div>
-  <div><a href="https://www.instagram.com/"><img src="insta4.jpg"></a></div>
+  <div><a href="Jewellery.html#Earrings"><img src="insta1.jpg"></a></div>
+  <div><a href="Jewellery.html#Earrings"><img src="insta2.jpg"></a></div>
+  <div><a href="Jewellery.html#Necklaces"><img src="insta3.jpg"></a></div>
+  <div><a href="Jewellery.html#Earrings"><img src="insta4.jpg"></a></div>
 </div>
 
 
@@ -184,10 +186,10 @@ function currentSlide(n){
 </div>
 
 <div class="get-to-know-us">
-    <div><a href="https://www.twitter.com/"><img src="twitter.png"></a></div>
-    <div><a href="https://instagram.com/"><img src="instagram.png"></a></div>
-    <div><a href="https://www.facebook.com/"><img src="facebook.png"></a></div>
-    <div><a href="https://www.pinterest.pt/"><img src="pinterest.png"></a></div>
+    <div><a href="https://www.twitter.com/"><img src="twitter.png" title="Twitter"></a></div>
+    <div><a href="https://instagram.com/"><img src="instagram.png" title="Instagram"></a></div>
+    <div><a href="https://www.facebook.com/"><img src="facebook.png" title="Facebook"></a></div>
+    <div><a href="https://www.pinterest.pt/"><img src="pinterest.png" title="Pinterest"></a></div>
 </div>
 
 
@@ -234,12 +236,20 @@ function currentSlide(n){
     </ul>
   </div>
 
-  <div>
-    <input type="text" name placeholder="ENTER YOUR EMAIL" class="uremail">
-    <button class="button-search">Sign Up</button>
-  </div>
   <div class="be1st2know">
-  Sign up for exclusive offers, sales, collection launches & events!
+    <ul>
+      <h4>Be the first to know</h4>
+      <li>
+        <input type="text" name placeholder="ENTER YOUR EMAIL" class="uremail"><button class="button-search">Sign Up</button>
+        <div class="letras-pequenas">
+        Sign up for exclusive offers, sales, collection launches & events!
+        </div>
+      </li>
+      <li>  
+        
+      </li>  
+    </ul>
+    
   </div>
 </div>
 
